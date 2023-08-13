@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RockPaperScissor</title>
-    <link rel="stylesheet" href="rockPaperScissor.css">
-</head>
-<body>
-    <div class="head">
-        <h1>Rock Paper Scissor</h1>
-        <p>Winner is who got 5 point first </p>
-    </div>
-    <div class="main">
-        <div class="player1">
-                <p>Player</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RockPaperScissor</title>
+        <link rel="stylesheet" href="rockPaperScissor.css" />
+
+        <link href="/fontawesome/css/fontawesome.css" rel="stylesheet" />
+        <link href="/fontawesome/css/brands.css" rel="stylesheet" />
+        <link href="/fontawesome/css/solid.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="head">
+            <h1>Rock Paper Scissor</h1>
+            <p>Winner is who got 5 point first</p>
         </div>
-        <div class="player1">
-               <p>Computer</p>
+        <div class="main">
+            <div class="player1">
+                <div class="name-score">
+                <div class="playerPlay">
+                    <p>Player</p>
+                </div>
+                <div class="playerScore"><p>Score</p></div>
+            </div>
+                <div class="icons">
+                    <i class="fa-solid fa-hand-back-fist " id="pRock"></i>
+                    <i class="fa-solid fa-hand-scissors" id="pScissor"></i>
+                    <i class="fa-solid fa-hand " id="pPapper"></i>
+                  
+                </div>
+            </div>
+
+            <div class="computer">
+                <div class="name-score">
+                <div class="computerPlay"><p>Computer</p></div>
+                <div class="computerScore"><p>Score</p></div>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-hand-back-fist " id="cRock"></i>
+                    <i class="fa-solid fa-hand-scissors" id="cScissor"></i>
+                    <i class="fa-solid fa-hand" id="cPapper"></i>
+                  
+                </div>
+            
+            </div>
         </div>
-    </div>
-    <div class="playAgain">
-        <button type="submit">Play Again</button>
-    </div>
-    <div class="result"></div>
-</body>
+        <div class="playAgain">
+            <button type="submit">Play Again</button>
+        </div>
+        <div class="result"></div>
+        <script src="rockPaperScissor.js"></script>
+    </body>
 </html>
