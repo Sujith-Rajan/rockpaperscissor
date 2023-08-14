@@ -52,9 +52,18 @@
             </div>
         </div>
         <div class="playAgain">
-            <button type="submit">Play Again</button>
+            <button onclick="refreshPage()" id="buttonPlayAgain" type="submit">Play Again</button>
         </div>
         <div id="result"></div>
+
+        <div id="alert1">
+            <span class="closebtn" onclick="this.parentElement.style.display='none'; endgame()">&times;</span>
+             You Win The Game !!!
+          </div>
+          <div id="alert2">
+            <span class="closebtn" onclick="this.parentElement.style.display='none'; endgame()">&times;</span>
+            Computer Win The Game !!!
+          </div>
         <script src="rockPaperScissor.js"></script>
     </body>
 </html>

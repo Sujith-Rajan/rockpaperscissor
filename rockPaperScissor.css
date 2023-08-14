@@ -83,3 +83,42 @@ button:hover {
     font-size: 150%;
     font-family: cursive;
 }
+
+/* The alert message box */
+#alert1{
+   display: none;
+   width: 100%;
+   padding: 2%;
+   background-color: #019620; 
+   color: white;
+   margin-bottom: 15px;
+   text-align: center;
+   font-size: 190%;
+ }
+ #alert2 {
+   display: none;
+   width: 100%;
+   padding: 2%;
+   background-color: #ef0505; 
+   color: white;
+   margin-bottom: 15px;
+   text-align: center;
+   font-size: 190%;
+ }
+ 
+ /* The close button */
+ .closebtn {
+   margin-left: 15px;
+   color: white;
+   font-weight: bold;
+   float: right;
+   font-size: 22px;
+   line-height: 20px;
+   cursor: pointer;
+   transition: 0.3s;
+ }
+ 
+ /* When moving the mouse over the close button */
+ .closebtn:hover {
+   color: black;
+ }

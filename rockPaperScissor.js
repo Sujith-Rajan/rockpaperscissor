@@ -75,8 +75,38 @@ function playGame(selection) {
         updateScoreDisplay();
     }
 }
-
+// score updated after each selection___________________________________________________________________________
 function updateScoreDisplay() {
+    if (playerPoint === 5 || computerPoint === 5) {
+        const value = playerPoint > computerPoint ? playerPoint : computerPoint;
+        exit(value);
+    } else {
+        document.getElementById("scoreDisplayPlayer").textContent = playerPoint;
+        document.getElementById("scoreDisplayComputer").textContent = computerPoint;
+    }
+}
+
+function refreshPage() {
+    window.location.reload();
+}
+
+function exit(value) {
     document.getElementById("scoreDisplayPlayer").textContent = playerPoint;
     document.getElementById("scoreDisplayComputer").textContent = computerPoint;
+    if (value === playerPoint) {
+        document.getElementById("result").textContent = "";
+        document.getElementById("alert1").style.display='block' ;
+        
+          
+    } else {
+        document.getElementById("result").textContent = "";
+        document.getElementById("alert2").style.display= 'block';
+        
+        
+    }
 }
+
+function endgame(){
+    window.location.reload();
+}
+
