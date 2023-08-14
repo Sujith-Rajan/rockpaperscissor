@@ -21,12 +21,15 @@
                 <div class="playerPlay">
                     <p>Player</p>
                 </div>
-                <div class="playerScore"><p>Score</p></div>
+                <div class="playerScore"><p>Score</p>
+                    <p id="scoreDisplayPlayer"></p>
+                </div>
             </div>
+                   
                 <div class="icons">
-                    <i class="fa-solid fa-hand-back-fist " id="pRock"></i>
-                    <i class="fa-solid fa-hand-scissors" id="pScissor"></i>
-                    <i class="fa-solid fa-hand " id="pPapper"></i>
+                    <i class="fa-solid fa-hand-back-fist srock" id="pRock"  ></i>
+                    <i class="fa-solid fa-hand-scissors sscissor" id="pScissor"></i>
+                    <i class="fa-solid fa-hand spapper" id="pPapper"></i>
                   
                 </div>
             </div>
@@ -34,12 +37,15 @@
             <div class="computer">
                 <div class="name-score">
                 <div class="computerPlay"><p>Computer</p></div>
-                <div class="computerScore"><p>Score</p></div>
+                <div class="computerScore"><p>Score</p>
+                    <p id="scoreDisplayComputer"> </p>
                 </div>
+                </div>
+                
                 <div class="icons">
-                    <i class="fa-solid fa-hand-back-fist " id="cRock"></i>
-                    <i class="fa-solid fa-hand-scissors" id="cScissor"></i>
-                    <i class="fa-solid fa-hand" id="cPapper"></i>
+                    <i class="fa-solid fa-hand-back-fist srock " id="cRock"></i>
+                    <i class="fa-solid fa-hand-scissors sscissor" id="cScissor"></i>
+                    <i class="fa-solid fa-hand spapper" id="cPapper"></i>
                   
                 </div>
             
@@ -48,7 +54,7 @@
         <div class="playAgain">
             <button type="submit">Play Again</button>
         </div>
-        <div class="result"></div>
+        <div id="result"></div>
         <script src="rockPaperScissor.js"></script>
     </body>
 </html>
